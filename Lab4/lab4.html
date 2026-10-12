@@ -1,0 +1,76 @@
+<!-- Name: Buddie Powell-->
+<!-- Section: Advanced Javascript Hybrid Mon/Wen 10:30am to 12:10pm-->
+<!-- Date: 2/15/2026-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced JavaScript Lab 4: Event Handlers</title>
+  </head>
+  <body>
+    <h1>Advanced Javascript - Lab4 Event Handlers</h1>
+
+    <p>
+      This lab focus on events where it will have 3 diffrent group of buttons
+      and output the values to the console when the user clicks on the buttons
+    </p>
+
+    <!-- Button group 1: Inline Event Handlers -->
+    <div class="button-group" id="group1">
+      <h2>Inline Event Handlers</h2>
+      <button class="inline-button" id="red" value="red" onclick="inline(this)">
+        Red
+      </button>
+      <button
+        class="inline-button"
+        id="green"
+        value="green"
+        onclick="inline(this)"
+      >
+        Green
+      </button>
+      <button
+        class="inline-button"
+        id="blue"
+        value="blue"
+        onclick="inline(this)"
+      >
+        Blue
+      </button>
+    </div>
+
+    <!-- Button group 2 Group 2: Dot Notation Event Handlers -->
+    <div class="button-group" id="group2">
+      <h2>Dot Notation Event Handlers</h2>
+      <button class="dot-notation-button" id="average" value="average">
+        Average
+      </button>
+      <button class="dot-notation-button" id="good" value="good">Good</button>
+      <button class="dot-notation-button" id="excellent" value="excellent">
+        Excellent
+      </button>
+    </div>
+
+    <!-- Button Group 3: addEventListener Event Handlers -->
+    <div class="button-group" id="group3">
+      <h2>addEventListener Event Handlers</h2>
+      <button class="add-event-listener-button" id="tall" value="tall">
+        Tall
+      </button>
+      <button
+        class="add-event-listener-button"
+        id="average-height"
+        value="average"
+      >
+        Average
+      </button>
+      <button class="add-event-listener-button" id="short" value="short">
+        Short
+      </button>
+    </div>
+
+    <script src="js/lab4.js"></script>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!-- Name: Buddie Powell-->
+<!-- Section: Advanced Javascript Hybrid mon-wens 10:30am-12:10pm-->
+<!-- Date: 02/20/2026-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tax Calculator - Wisconsin Single Filer 2024</title>
+    <!-- this links the css file from the css folder-->
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>2024 Tax Calculator for Wisconsin Single Filer</h1>
+
+      <!-- this form is where the user can input their gross salary based taxes from 2024-->
+      <form id="taxForm">
+        <label for="grossSalary">Gross Salary ($):</label>
+        <input
+          type="text"
+          id="grossSalary"
+          pattern="^\d+$"
+          required
+          placeholder="Enter whole number only"
+        />
+        <button type="submit">Calculate Taxes</button>
+      </form>
+
+      <!-- Results table for the tax type and the amount-->
+      <table id="resultsTable" class="results" style="display: none">
+        <thead>
+          <tr>
+            <th>Tax Type</th>
+            <th>Amount ($)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Gross Pay</strong></td>
+            <td id="grossPay"></td>
+          </tr>
+          <tr>
+            <td>Federal Taxes</td>
+            <td id="federalTax"></td>
+          </tr>
+          <tr>
+            <td>Wisconsin State Taxes</td>
+            <td id="stateTax"></td>
+          </tr>
+          <tr>
+            <td>FICA Medicare Tax</td>
+            <td id="medicareTax"></td>
+          </tr>
+          <tr>
+            <td>FICA Social Security Tax</td>
+            <td id="socialSecurityTax"></td>
+          </tr>
+          <tr>
+            <td><strong>Total Taxes</strong></td>
+            <td id="totalTaxes"></td>
+          </tr>
+          <tr>
+            <td><strong>Net Pay</strong></td>
+            <td id="netPay"></td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- This is the end of the results table-->
+    </div>
+    <!-- This links the javascript file from the js folder-->
+    <script src="js/project1.js"></script>
+  </body>
+</html>
